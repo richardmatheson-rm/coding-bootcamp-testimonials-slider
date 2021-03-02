@@ -13,3 +13,102 @@ $weight-heavy: 700;
 // Colours
 $dark-blue: hsl(240, 38%, 20%);
 $grayish-blue: hsl(240, 18%, 77%);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/images/pattern-curve.svg),
+      url(/images/pattern-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom, right center;
+    font-family: $family;
+
+    #container {
+      height: 570px;
+      width: 1110px;
+      display: flex;
+
+      #container_content {
+        width: 570px;
+
+        #content {
+          height: 275px;
+          width: 630px;
+          padding-top: 205px;
+          background-image: url(/images/pattern-quotes.svg);
+          background-repeat: no-repeat;
+          background-position-x: 104px;
+          background-position-y: 138px;
+
+          #body_paragraph {
+            font-size: $body-font;
+            font-weight: $weight-light;
+            padding-bottom: 25px;
+            position: relative;
+          }
+          #credentials {
+            #author {
+              font-weight: $weight-heavy;
+            }
+
+            #profession {
+              font-weight: $weight-heavy;
+              color: $grayish-blue;
+            }
+          }
+        }
+      }
+      #container_slider {
+        #container_image {
+          width: 540px;
+          height: 543px;
+        }
+
+        #slider_buttons {
+          button {
+            width: 56px;
+            height: 54px;
+            // border-radius: 50px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: white;
+            border: 0.2px solid white;
+            float: left; // Float buttons side by side
+            // box-shadow: 2px 2px 20px 1px $grayish-blue;
+            transform: translateY(-27px) translateX(62px);
+          }
+          #prev_button {
+            background-image: url(/images/icon-prev.svg);
+            border-right: none;
+            border-top-left-radius: 27px;
+            border-bottom-left-radius: 27px;
+            box-shadow: 0px 2px 20px 1px $grayish-blue;
+          }
+
+          #next_button {
+            background-image: url(/images/icon-next.svg);
+            border-left: none;
+            border-top-right-radius: 27px;
+            border-bottom-right-radius: 27px;
+            box-shadow: 8px 2px 10px $grayish-blue;
+          }
+        }
+      }
+    }
+  }
+}
