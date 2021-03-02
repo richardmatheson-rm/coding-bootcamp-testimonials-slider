@@ -77,6 +77,10 @@ body {
         #container_image {
           width: 540px;
           height: 543px;
+
+          img {
+            box-shadow: 2px 15px 25px 1px $grayish-blue;
+          }
         }
 
         #slider_buttons {
@@ -92,6 +96,11 @@ body {
             // box-shadow: 2px 2px 20px 1px $grayish-blue;
             transform: translateY(-27px) translateX(62px);
           }
+
+          button:hover {
+            cursor: pointer;
+          }
+
           #prev_button {
             background-image: url(/images/icon-prev.svg);
             border-right: none;

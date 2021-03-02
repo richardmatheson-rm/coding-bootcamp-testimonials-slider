@@ -73,6 +73,11 @@ body main #container #container_slider #container_image {
   height: 543px;
 }
 
+body main #container #container_slider #container_image img {
+  -webkit-box-shadow: 2px 15px 25px 1px #babacf;
+          box-shadow: 2px 15px 25px 1px #babacf;
+}
+
 body main #container #container_slider #slider_buttons button {
   width: 56px;
   height: 54px;
@@ -83,6 +88,10 @@ body main #container #container_slider #slider_buttons button {
   float: left;
   -webkit-transform: translateY(-27px) translateX(62px);
           transform: translateY(-27px) translateX(62px);
+}
+
+body main #container #container_slider #slider_buttons button:hover {
+  cursor: pointer;
 }
 
 body main #container #container_slider #slider_buttons #prev_button {
