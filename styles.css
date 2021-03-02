@@ -30,6 +30,13 @@ body main {
   font-family: "Inter", sans-serif;
 }
 
+@media screen and (max-width: 375px) {
+  body main {
+    background-size: 375px 72px, 310px 330px;
+    background-position: -45px 730px, 30px 85px;
+  }
+}
+
 body main #container {
   height: 570px;
   width: 1110px;
@@ -38,8 +45,29 @@ body main #container {
   display: flex;
 }
 
+@media screen and (max-width: 375px) {
+  body main #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    height: 535px;
+    width: 315px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 body main #container #container_content {
   width: 570px;
+}
+
+@media screen and (max-width: 375px) {
+  body main #container #container_content {
+    height: 200px;
+    width: 315px;
+  }
 }
 
 body main #container #container_content #content {
@@ -52,6 +80,17 @@ body main #container #container_content #content {
   background-position-y: 138px;
 }
 
+@media screen and (max-width: 375px) {
+  body main #container #container_content #content {
+    height: 200px;
+    width: 315px;
+    padding-top: 0px;
+    text-align: center;
+    background-position: 127px -40px;
+    background-size: 60px 50px;
+  }
+}
+
 body main #container #container_content #content #body_paragraph {
   font-size: 32px;
   font-weight: 300;
@@ -59,8 +98,30 @@ body main #container #container_content #content #body_paragraph {
   position: relative;
 }
 
+@media screen and (max-width: 375px) {
+  body main #container #container_content #content #body_paragraph {
+    font-size: 17px;
+    letter-spacing: 0.04em;
+    position: static;
+    padding-bottom: 0px;
+    line-height: 1.5em;
+    font-weight: 300;
+  }
+}
+
 body main #container #container_content #content #credentials #author {
   font-weight: 700;
+}
+
+@media screen and (max-width: 375px) {
+  body main #container #container_content #content #credentials #author {
+    text-align: center;
+    display: block;
+    padding-top: 12px;
+    letter-spacing: 0.04em;
+    font-weight: 500;
+    font-size: 15px;
+  }
 }
 
 body main #container #container_content #content #credentials #profession {
@@ -68,14 +129,53 @@ body main #container #container_content #content #credentials #profession {
   color: #babacf;
 }
 
+@media screen and (max-width: 375px) {
+  body main #container #container_content #content #credentials #profession {
+    text-align: center;
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  body main #container #container_slider {
+    height: 275px;
+    width: 315px;
+  }
+}
+
 body main #container #container_slider #container_image {
   width: 540px;
   height: 543px;
 }
 
+@media screen and (max-width: 375px) {
+  body main #container #container_slider #container_image {
+    height: 275px;
+    width: 315px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 body main #container #container_slider #container_image img {
   -webkit-box-shadow: 2px 15px 25px 1px #babacf;
           box-shadow: 2px 15px 25px 1px #babacf;
+}
+
+@media screen and (max-width: 375px) {
+  body main #container #container_slider #container_image img {
+    height: 250px;
+    width: 255px;
+  }
 }
 
 body main #container #container_slider #slider_buttons button {
@@ -88,6 +188,15 @@ body main #container #container_slider #slider_buttons button {
   float: left;
   -webkit-transform: translateY(-27px) translateX(62px);
           transform: translateY(-27px) translateX(62px);
+}
+
+@media screen and (max-width: 375px) {
+  body main #container #container_slider #slider_buttons button {
+    height: 36px;
+    width: 40px;
+    -webkit-transform: translateY(-44px) translateX(117px);
+            transform: translateY(-44px) translateX(117px);
+  }
 }
 
 body main #container #container_slider #slider_buttons button:hover {
